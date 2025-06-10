@@ -1,10 +1,6 @@
-import numpy as np
+import numpy as np 
+arr_12d = np.array([[1, 2], [3, 4]])    
+arr_22d = np.array([[5, 6], [7, 8]])
 
-# Random mix of 15 numbers
-
-math = np.random.randint(1, 10, size=15)
-print(math)
-
-# Calculations
-print(np.sum(math))
-print(np.mean(math))
+result = np.matmul(arr_12d, arr_22d)
+print(result)
