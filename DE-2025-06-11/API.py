@@ -1,4 +1,5 @@
 import requests
+import sys
 
 kattig_fakta = []
 for _ in range(5):

@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import json
+import argparse
+
 from faker import Faker
 
 fake = Faker()
