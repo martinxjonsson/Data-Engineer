@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from faker import Faker
+from faker import Faker # type: ignore
 
 # Create a Faker instance
 fake = Faker()
