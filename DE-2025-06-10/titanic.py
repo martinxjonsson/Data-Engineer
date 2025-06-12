@@ -8,7 +8,7 @@ df.columns = df.columns.str.strip()
 df.columns = df.columns.str.replace(r'[^\w]', '_', regex=True)
 df.loc[df['Age'] < 18, 'Sex'] = 'child'
 
-# Step 8: Create a new DataFrame
+# Create a new DataFrame
 df_relatives = df.loc[(df['Siblings_Spouses_Aboard'] > 0) | (df['Parents_Children_Aboard'] > 0), ['Pclass', 'Name', 'Age']].copy()
 df_relatives = df.loc[(df['Siblings_Spouses_Aboard'] > 0) | (df['Parents_Children_Aboard'] > 0), ['Pclass', 'Name', 'Age','Fare']].copy()
 average_fare_relatives = df_relatives['Fare'].mean()
