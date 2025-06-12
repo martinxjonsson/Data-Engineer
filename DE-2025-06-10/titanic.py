@@ -9,8 +9,7 @@ df.columns = df.columns.str.replace(r'[^\w]', '_', regex=True)
 df.loc[df['Age'] < 18, 'Sex'] = 'child'
 
 # Create a new DataFrame
-df_relatives = df.loc[(df['Siblings_Spouses_Aboard'] > 0) | (df['Parents_Children_Aboard'] > 0), ['Pclass', 'Name', 'Age']].copy()
-df_relatives = df.loc[(df['Siblings_Spouses_Aboard'] > 0) | (df['Parents_Children_Aboard'] > 0), ['Pclass', 'Name', 'Age','Fare']].copy()
+df_relatives = df.loc[(df['Siblings_Spouses_Aboard'] > 0) | (df['Parents_Children_Aboard'] > 0), ['Pclass', 'Name', 'Age', 'Fare']].copy()
 average_fare_relatives = df_relatives['Fare'].mean()
 print(f"Average fare paid by people with relatives: {average_fare_relatives}")
 print("DataFrame with people who had relatives:")
