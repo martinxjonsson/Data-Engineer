@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "DB Demo",
+            "database": "RESTAPIDEMO",
+            "username": "postgres",
+            "password": "episalt"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Assessment",
+            "database": "assessment",
+            "username": "postgres",
+            "password": "episalt"
+        }
+    ]
+}
